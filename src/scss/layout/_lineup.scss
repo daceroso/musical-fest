@@ -1,0 +1,74 @@
+.lineup {
+  background-color: $normal-brown;
+  padding: $separator 0;
+
+  h3,
+  p {
+    text-align: center;
+    color: white;
+  }
+
+  .day {
+    text-transform: uppercase;
+    margin: $separator 0;
+  }
+}
+
+.scenario-container {
+  @include tablet {
+    @include grid(2, $separator);
+  }
+
+  .scenario {
+    padding-top: $separator / 2;
+  }
+  .name-scenario {
+    color: $black;
+    font-size: 2rem;
+    font-weight: $thin;
+
+    &:after {
+      content: "";
+      width: 20rem;
+      height: 10rem;
+      display: block;
+      margin: 2rem auto 0 auto;
+      background-size: 15rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+.edm .name-scenario {
+  &:after {
+    background-image: url(../img/icono_edm.png);
+  }
+}
+
+.rock .name-scenario {
+  &:after {
+    background-image: url(../img/icono_rock.png);
+  }
+}
+
+.calendar {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: $separator / 2;
+    font-weight: $bold;
+    span {
+      font-weight: normal;
+    }
+  }
+}
+
+.bg-brown .calendar li:nth-child(odd) {
+    background-color:darken($secondary-brown, 10);
+}
+
+.bg-yellow .calendar li:nth-child(odd) {
+    background-color:darken($burned-yellow, 10);
+}

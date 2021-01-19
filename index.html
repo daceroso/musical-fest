@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Fest</title>
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <h1>Rock & EDM Fest</h1>
+        <nav class="main-navigation">
+          <a href="#lineup">Line Up</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#tickets">Tickets</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video">
+      <div class="overlay">
+        <div class="container container-video">
+          <h2>
+            Rock & EDM Fest
+            <span>June 2037, Bratislava, Slovakia</span>
+          </h2>
+        </div>
+      </div>
+      <video controls autoplay muted loop>
+        <source src="video/concert.mp4" type="video/mp4" />
+        <source src="video/concert.ogg" type="video/ogg" />
+        <source src="video/concert.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <div class="about-fest container">
+      <div class="image">
+        <img src="build/img/imagen_vocalista.jpg" alt="img vocalist" />
+      </div>
+
+      <div class="container-fest">
+        <h2>Rock & EDM Fest</h2>
+        <p class="date">June 2037, Bratislava, Slovakia</p>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut
+          sunt, culpa animi nisi vel, tempora, eos eaque nemo ducimus sequi quam
+          rem quod repellendus laborum accusamus inventore doloribus dolorum!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+
+    <section class="lineup" id="lineup">
+      <h3 class="">Line Up</h3>
+      <p class="day">Friday 21</p>
+
+      <div class="container scenario-container">
+        <div class="scenario rock bg-brown">
+          <p class="name-scenario">Rock</p>
+          <ul class="calendar">
+            <li>24:00 | <span>Megadeth</span></li>
+            <li>22:00 | <span>Pearl Jam </span></li>
+            <li>20:00 | <span>KoRn</span></li>
+            <li>19:00 | <span>Sonata Arctica</span></li>
+            <li>18:00 | <span>Breaking Benjamin</span></li>
+            <li>17:00 | <span>Epica </span></li>
+          </ul>
+        </div>
+
+        <div class="scenario edm bg-yellow">
+          <p class="name-scenario">EDM</p>
+          <ul class="calendar">
+            <li>24:00 | <span>Deadmau5</span></li>
+            <li>22:00 | <span> Tiesto </span></li>
+            <li>20:00 | <span>Hardwell</span></li>
+            <li>19:00 | <span>Dash Berlin</span></li>
+            <li>18:00 | <span>Fedde Legrand</span></li>
+            <li>17:00 | <span>Audien </span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="day">Saturday 22</p>
+
+      <div class="container scenario-container">
+        <div class="scenario rock bg-yellow">
+          <p class="name-scenario">Rock</p>
+          <ul class="calendar">
+            <li>24:00 | <span>Red hot Chili Peppers</span></li>
+            <li>22:00 | <span>The killer</span></li>
+            <li>20:00 | <span>Deftones</span></li>
+            <li>19:00 | <span>Slipknot</span></li>
+            <li>18:00 | <span>Papa Roach</span></li>
+            <li>17:00 | <span>Lamb of God</span></li>
+          </ul>
+        </div>
+
+        <div class="scenario edm bg-brown">
+          <p class="name-scenario">EDM</p>
+          <ul class="calendar">
+            <li>24:00 | <span>Paul Van Dyk</span></li>
+            <li>22:00 | <span> Armin Van Buuren</span></li>
+            <li>20:00 | <span>Above & Beyond</span></li>
+            <li>19:00 | <span>Eric Prydz</span></li>
+            <li>18:00 | <span>Ferry Corsten</span></li>
+            <li>17:00 | <span>Vini Vici</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="gallery container" id="gallery">
+      <h3>Gallery</h3>
+      <ul class="img-gallery"></ul>
+    </section>
+
+    <section class="tickets bg-yellow" id="tickets">
+      <h3>Tickets</h3>
+      <div class="ticket-container container">
+        <div class="basic plan">
+          <p>Coupon 1 Day</p>
+          <table class="coupon">
+            <thead>
+              <tr>
+                <th>Pack</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Access to all scenarios</td>
+              </tr>
+
+              <tr>
+                <td>Food and Drink</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td>$100</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="premium plan">
+          <p>Coupon 2 Days</p>
+          <table class="coupon">
+            <thead>
+              <tr>
+                <th>Pack</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Access to all scenarios</td>
+              </tr>
+
+              <tr>
+                <td>Food and Drink</td>
+              </tr>
+
+              <tr>
+                <td>Band T-shirt</td>
+              </tr>
+              <tr>
+                <td>VIP Access</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td>$180</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Rock & EDM Fest. All rights reserved.</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+  </body>
+</html>
